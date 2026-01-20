@@ -17,5 +17,6 @@ All the scripts give exactly the same outputs, but they process the time traces 
 First, `judge_trigger_event_level_du_level_channel_level.py` separately processes each time trace of a DU. It will help you perform flexible processes which may be channel and/or DU dependent.  
 Second, `judge_trigger_event_level_du_level.py` processes the time traces of all three channels of a DU together.  
 Third, `judge_trigger_event_level.py` processes all DUs toghether. It enables you to write a visually simple code if you want to process all DUs in the same way.  
+As an example, the output of any of the above scripts is located under the directory `./out_judge_trigger`.
 
 For the calculation of the exposure, you can use `calculate_exposure.py`. It outputs the figures showing the exposure and the expected number of CR events to be observed in a day, as a function of energy and zenith angle, energy, or zenith angle; see calculate_exposure_2d.pdf and calculate_exposure.pdf.
