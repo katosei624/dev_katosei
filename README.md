@@ -10,7 +10,8 @@ All the functions are written in utils.py.
 The following three scripts show how you can use the above functions to get the trigger flag of the simulation events (1 = triggered, 0 = NOT triggered):
 1. `judge_trigger_event_level_du_level_channel_level.py`,
 2. `judge_trigger_event_level_du_level.py`, and
-3. `judge_trigger_event_level.py`.  All the scripts give exactly the same outputs, but they process the time traces of DUs and discuss the FLT0- and array-level triggers in different ways.  
+3. `judge_trigger_event_level.py`.
+All the scripts give exactly the same outputs, but they process the time traces of DUs and discuss the FLT0- and array-level triggers in different ways.  
 First, `judge_trigger_event_level_du_level_channel_level.py` separately processes each time trace of a DU. It will help you perform flexible processes which may be channel and/or DU dependent.  
 Second, `judge_trigger_event_level_du_level.py` processes the time traces of all three channels of a DU together.  
 Third, `judge_trigger_event_level.py` processes all DUs toghether. It enables you to write a visually simple code if you want to process all DUs in the same way.  
