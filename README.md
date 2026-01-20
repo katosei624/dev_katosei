@@ -5,6 +5,7 @@ These function includes
 1. filtering the time traces of GP300 radio antenna detector units (DUs),
 2. discussing the FLT0 trigger of each channel (X, Y, & Z channels of each DU), and
 3. discussing the array-level trigger (e.g., with criterions that any N DUs or more triggered within a time window of T).
+
 All the functions are written in utils.py.
 
 The following three scripts show how you can use the above functions to get the trigger flag of the simulation events (1 = triggered, 0 = NOT triggered):
