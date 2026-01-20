@@ -8,12 +8,23 @@ import matplotlib.pyplot as plt
 import re
 from utils import *
 
+### How to execute the script:
+### $ python judge_trigger_event_level_du_level_channel_level.py data_directory FLT0_trig_params_file
+### Example:
+### $ python judge_trigger_event_level_du_level_channel_level.py /your/data/directory ./dict_trig_params_fir.csv
+
 ### Set input data and an output file
+### data_directory: directory where you have GRAND root files
+### FLT0_trig_params_file: file containing the FLT0 parameters,
+### please see dict_trig_params_fir.csv for its format
 data_directory, FLT0_trig_params_file = sys.argv[1], sys.argv[2]
-d_input = groot.DataDirectory(data_directory)
+
+### The output will be generated in the directory './out_judge_trigger',
+### so please make sure to create the directory before executing the script.
 output  = open('out_judge_trigger/'+data_directory[data_directory.find('sim'):],'w')
 
 ### Read GRAND root data
+d_input = groot.DataDirectory(data_directory)
 trun_l1, tadc_l1, tshower_l0 = d_input.trun_l1, d_input.tadc_l1, d_input.tshower_l0
 
 event_list = tadc_l1.get_list_of_events()
