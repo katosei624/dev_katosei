@@ -7,7 +7,7 @@ These function includes
 3. discussing the array-level trigger (e.g., with criterions that any N DUs or more triggered within a time window of T).
 All the functions are written in utils.py.
 
-The following three script shows how you can use the above functions to get the trigger flag of the simulation events (1 = triggered, 0 = NOT triggered):
+The following three scripts show how you can use the above functions to get the trigger flag of the simulation events (1 = triggered, 0 = NOT triggered):
 1. `judge_trigger_event_level_du_level_channel_level.py`,
 2. `judge_trigger_event_level_du_level.py`, and
 3. `judge_trigger_event_level.py`.
